@@ -26,11 +26,9 @@ jobs:
     - name: guardar resultados
       run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" > results.txt
 
-    - name: xd
-      run: |
-        git init
-        git add .
-        git commit -m "Resultados de test"
-        git push
-
-    
+    - name: autocommit
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+         commit_message: resultados del test
+         
+          
