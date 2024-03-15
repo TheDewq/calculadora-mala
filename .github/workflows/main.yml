@@ -32,6 +32,5 @@ jobs:
          commit_message: resultados del test
          commit_user_name: Carlos el bot
          commit_user_email: orjuelacarlos80@gmail.com
-         commit_autor: nose
          
           
