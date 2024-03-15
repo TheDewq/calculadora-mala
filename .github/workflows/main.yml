@@ -28,6 +28,10 @@ jobs:
 
     - name: guardar resultados
       run: |
+        echo "#################################################################################" >> results.txt
+        echo "#################################################################################" >> results.txt
+        echo "#################################################################################" >> results.txt
+        echo "">>results.txt
         echo "test realizado el:" >> results.txt
         date >> results.txt
         gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" >> results.txt
