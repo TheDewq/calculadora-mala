@@ -17,6 +17,8 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: '11' 
-        
+    - name: setup gradle
+      uses: gradle/actions/setup-gradle@v3
+      
     - name: Ejecutar pruebas con Gradle
-      run: ./gradlew :app:testDebugUnitTest --tests "com.example.calculadora.matTest"
+      run: ./gradlew test
