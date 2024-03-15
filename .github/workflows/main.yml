@@ -28,8 +28,8 @@ jobs:
 
     - name: guardar resultados
       run: |
-        fecha = date
-        echo "test realizado el $date" >> result.txt
+        echo "test realizado el:" >> result.txt
+        date >> result.txt
         gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" >> results.txt
 
     - name: autocommit
