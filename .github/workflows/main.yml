@@ -27,7 +27,10 @@ jobs:
       run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest"
 
     - name: guardar resultados
-      run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" > results.txt
+      run: |
+        fecha = date
+        echo "test realizado el $date" >> result.txt
+        gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" >> results.txt
 
     - name: autocommit
       uses: stefanzweifel/git-auto-commit-action@v5
