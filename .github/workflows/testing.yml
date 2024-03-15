@@ -1,0 +1,16 @@
+name: testing unitario
+
+on:
+  push:
+    branches: 
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Android GitHub Action
+        uses: vukan-markovic/Github-Android-Action@1.2
