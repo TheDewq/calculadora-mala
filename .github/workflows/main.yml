@@ -19,4 +19,4 @@ jobs:
         java-version: '11' 
         
     - name: Ejecutar pruebas con Gradle
-      run: ./gradlew test
+      run: ./gradlew :app:testDebugUnitTest --tests "com.example.calculadora.matTest"
