@@ -25,6 +25,8 @@ jobs:
 
     - name: guardar resultados
       run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" > results.txt
+
+    - name: xd
       run: dir
 
     
