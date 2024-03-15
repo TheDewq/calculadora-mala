@@ -21,7 +21,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       
     - name: Ejecutar pruebas con Gradle
-      run: gradle test --tests "com.example.calculadora.matTest"
+      run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest"
 
     - name: guardar resultados
       run: gradle :app:testDebugUnitTest --tests "com.example.calculadora.matTest" > results.txt
