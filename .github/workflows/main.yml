@@ -15,8 +15,7 @@ jobs:
     - name: Configurar JDK
       uses: actions/setup-java@v2
       with:
-        distribution: 'adopt'
-        java-version: '11' 
+        java-version: '17' 
     - name: setup gradle
       uses: gradle/actions/setup-gradle@v3
       
