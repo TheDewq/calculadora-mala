@@ -8,6 +8,9 @@ on:
 jobs:
   build-gradle-project:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
     steps:
     - name: Checkout del código fuente
       uses: actions/checkout@v3
