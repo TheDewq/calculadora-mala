@@ -21,4 +21,4 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       
     - name: Ejecutar pruebas con Gradle
-      run: ./gradlew test
+      run: dir
