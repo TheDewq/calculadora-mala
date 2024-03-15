@@ -14,7 +14,7 @@ public class matTest extends TestCase {
     }
 
     public void testMultiplicacion() {
-
+        assertEquals(6.0,mat.multiplicacion(n1,n2));
     }
 
     public void testDivision() {
